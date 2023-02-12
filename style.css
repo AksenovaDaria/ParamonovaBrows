@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url("/fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: Merriweather-Bold;
+    src: url("/fonts/Merriweather/Merriweather-Bold.ttf");
+    
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url("/fonts/Montserrat-Medium.ttf");
+    
+}
+
+@font-face {
+    font-family: IndieFlower;
+    src: url("/fonts/IndieFlower-Regular.ttf");
+}
+
+@media (min-width 767px){
+    h1{
+        font-size: calc(27px + (23+23*0.7));
+    }
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Merriweather';
+    
+}
+
+a{
+    text-decoration: none;
+    /* color: inherit; */
+    color: #FFFFFF;
+
+}
+
+.wrapper{
+    min-height: 100%;
+    display: grid;
+    grid-template: 30px 1fr 30px/ 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    padding: 10px;
+    display: grid;
+    grid-template: 1fr/ 1fr minmax(auto, 1200px) 1fr;
+    align-items: center;
+    
+}
+
+
+
+.header a{
+    font-family: 'IndieFlower';
+    grid-column: 2/3;
+    font-size: 20px;
+}
+
+.main{
+    grid-area: main;
+    
+    
+    
+    
+}
+
+.top {
+    
+    /* padding-top: 50px; */
+    display: grid;
+    grid-template: 1fr/ 1fr minmax(auto, 1200px) 1fr;
+    /* padding-left: minmax(10px, 116px); */
+}
+
+.text1_container{
+    grid-column: 2/3;
+    font-weight: minmax(auto, 900px);
+    justify-content: center;
+    margin: auto;
+    padding-top: 190px;
+}
+
+h1{
+    
+    font-size: calc(27px + 23*(100vw/1200));
+    /* font-weight: bold; */
+}
+
+.text2_container{
+    grid-column: 2/3;
+    padding-top: 30px;
+    font-weight: minmax(auto, 600px);
+    justify-content: center;
+    margin: auto;
+}
+
+.text2{
+    font-size: calc(16px + 10*(100vw/1200));
+    font-family: 'Merriweather';
+}
+
+
+
+.top-but{
+    grid-column: 2/3;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.button_top {
+    padding: 16px 12px;
+    gap: 10px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #000000 37.44%, #000000 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 202px;
+    height: 52px;
+    left: 618px;
+    top: 398px;
+    color: #FFFFFF;
+    font-family: 'Merriweather-Bold';
+}
+
+.servises{
+    
+    display: grid;
+    grid-template: 1fr/ 1fr minmax(auto, 1200px) 1fr;
+}
+
+.container_servises{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+
+.container_img{
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.container_img img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+}
+
+
+
+.container_card{
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.56);
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template: 2fr 1fr 2fr/ 1fr;
+    
+    
+    
+}
+
+.name{
+    font-family: Montserrat-Medium;
+    font-size: 18;
+    color: #000000;
+    
+
+}
+
+.price{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.but{
+    display: flex;
+    
+    justify-content: center;
+}
+    
+
+.card{
+    font-family: Merriweather;
+    font-size: 14px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.51);
+    border-color: #D9D9D9;
+    padding: 5px;
+    color: #FFFFFF;
+    
+  
+    
+    
+}
+
+.information{
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+}
+
+.information_container{
+    grid-column: 2/3;
+    max-width: 1200px;
+    background-color: #D9D9D9;
+    color: #000000;
+    font-family: 'Merriweather';
+    padding: 10px;
+    font-size: 16px;
+}
+
+.information_head{
+
+}
+
+.footer{
+    grid-area: footer;
+    
+    padding: 10px;
+    display: grid;
+    grid-template: 1fr/ 1fr minmax(auto, 1200px) 1fr;
+    align-items: center;
+    
+}
+
+
+
+.footer a{
+    font-family: 'IndieFlower';
+    grid-column: 2/3;
+    font-size: 20px;
+}
+
